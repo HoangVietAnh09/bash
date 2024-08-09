@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+res=""
+check=0
+if (($1 % 3 == 0))
+then
+    res+="Pling"
+    check=1
+fi
+if (($1 % 5 == 0))
+then
+    res+="Plang"
+    check=1
+fi
+if (($1 % 7 == 0))
+then
+    res+="Plong"
+    check=1
+fi
+
+if [ $check == 1 ] 
+then
+    echo $res
+else
+    echo $1
+fi
