@@ -1,0 +1,4 @@
+#!/bin/bash
+ 
+read -s name
+echo "Welcome $name"

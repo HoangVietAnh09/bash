@@ -1,0 +1,11 @@
+#!/bin/bash
+
+sum=0
+read n
+for ((i=0; i<n; i++));
+do
+	read m
+	sum=$(($sum+$m))
+done
+avg=$sum/$n
+printf %.3f $(echo $avg | bc -l)

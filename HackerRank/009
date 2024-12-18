@@ -1,0 +1,5 @@
+#!/bin/bash
+
+read var
+
+printf %.3f $(echo $var | bc -l)

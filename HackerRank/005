@@ -1,0 +1,8 @@
+#!/bin/bash
+read -s a
+read -s b
+echo $(($a+$b))
+echo $(($a-$b))
+echo $(($a*$b))
+echo $(($a/$b))
+
